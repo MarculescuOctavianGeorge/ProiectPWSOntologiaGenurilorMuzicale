@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1652618174522" name="duplicate:http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale" uri="OntologiaGenurilorMuzicaleFINAL.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652618174522" name="duplicate:http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale" uri="OntologiaGenurilorMuzicaleREFACUT1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652618174522" name="duplicate:http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale" uri="OntologiaGenurilorMuzicaleREFACUT2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652618174522" name="duplicate:http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale" uri="OntologiaGenurilorMuzicaleREFACUT3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652618174522" name="duplicate:http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale" uri="OntologiaGenurilorMuzicaleREFACUT4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652618174522" name="duplicate:http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale" uri="OntologiaGenurilorMuzicaleREFACUT5.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652618174522" name="duplicate:http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale" uri="OntologiaGenurilorMuzicaleREFACUT6.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652618174522" name="duplicate:http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale" uri="TG11-OntologiaGenurilorMuzicale_406-TimofteDaria-PopaCatalin-MarculescuOctavian.owl"/>
+    </group>
+</catalog>

@@ -1,0 +1,902 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY OntologiaGenurilorMuzicale "http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#"
+     xml:base="http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:OntologiaGenurilorMuzicale="http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#aCompusBailaMorenaIn -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;aCompusBailaMorenaIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#aInregistratUn -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;aInregistratUn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#areOrigineaIn -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;areOrigineaIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#areStudiiSuperioareIn -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;areStudiiSuperioareIn">
+        <rdfs:subPropertyOf rdf:resource="&OntologiaGenurilorMuzicale;esteSolist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteAcompaniatDe -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteAcompaniatDe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteAlbum -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteAlbum"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteAnLansarePentru -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteAnLansarePentru">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;LansareEveniment"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OntologiaGenurilorMuzicale;esteAnLansarePentru"/>
+                <owl:someValuesFrom rdf:resource="&OntologiaGenurilorMuzicale;Festival"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteDerivatDin -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteDerivatDin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteFormatIn -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteFormatIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteGazda -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteGazda"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteGenMuzicalDin -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteGenMuzicalDin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteInstrumentInventatIn -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteInstrumentInventatIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteInterpretataDe -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteInterpretataDe">
+        <rdfs:subPropertyOf rdf:resource="&OntologiaGenurilorMuzicale;estePiesa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteOriginarDin -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteOriginarDin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteOrigineaLui -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteOrigineaLui"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#estePiesa -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;estePiesa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#estePromovatorulLui -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;estePromovatorulLui"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteProvenitDin -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteProvenitDin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteProvenitaDin -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteProvenitaDin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteSolist -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteSolist"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#esteTaraDin -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;esteTaraDin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#promoveazaUn -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;promoveazaUn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#suntPrincipalulElementLa -->
+
+    <owl:ObjectProperty rdf:about="&OntologiaGenurilorMuzicale;suntPrincipalulElementLa"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#anAparitie -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;anAparitie">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;DataDeLansare"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#anProductie -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;anProductie">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;DataDeLansare"/>
+        <rdfs:subPropertyOf rdf:resource="&OntologiaGenurilorMuzicale;numePiesa"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#ascultator -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;ascultator">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Festival"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#canale -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;canale">
+        <rdfs:comment rdf:datatype="&xsd;string">Este un stream (mod de transmitere a pieselor) ce reprezinta posturi de televiziune, canale de radio sau diferite parti ale internetului.</rdfs:comment>
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Festival"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#capacitate -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;capacitate">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Festival"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#codDeBare -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;codDeBare">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;DataDeLansare"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#continent -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;continent">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;OrigineGeografica"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#dataEveniment -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;dataEveniment">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;LansareEveniment"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#denumireAlbum -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;denumireAlbum">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;ObiectMuzical"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#denumireInstrument -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;denumireInstrument">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Instrument"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#denumireOrchestra -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;denumireOrchestra">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Orchestra"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#denumireStream -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;denumireStream">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Stream"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#durataPiesa -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;durataPiesa">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Piesa"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#genMuzical -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;genMuzical">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;OrigineGeografica"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#genuriMuzicaleAsemanatoare -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;genuriMuzicaleAsemanatoare">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;GenMuzical"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#instrumentePredominante -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;instrumentePredominante">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Instrument"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#nrAbonati -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;nrAbonati">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Festival"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#nrAlbume -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;nrAlbume">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;ArtistMuzicalSolo"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#nrInregistrare -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;nrInregistrare">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;DataDeLansare"/>
+        <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#nrInstrumente -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;nrInstrumente">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Orchestra"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#nrPiesa -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;nrPiesa">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Piesa"/>
+        <rdfs:subPropertyOf rdf:resource="&OntologiaGenurilorMuzicale;solist"/>
+        <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#nrStrofe -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;nrStrofe">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Piesa"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#numePersoana -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;numePersoana">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Persoana"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#numePiesa -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;numePiesa">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;ArtistMuzicalSolo"/>
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Piesa"/>
+        <rdfs:subPropertyOf rdf:resource="&OntologiaGenurilorMuzicale;solist"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#parteaInregistrata -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;parteaInregistrata">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Piesa"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#pieseSugestive -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;pieseSugestive">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Piesa"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#soiuriDeCorzi -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;soiuriDeCorzi">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Orchestra"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#solist -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;solist">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;ArtistMuzicalSolo"/>
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Festival"/>
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Piesa"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#suprafataScena -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;suprafataScena">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Festival"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#tara -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;tara">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;OrigineGeografica"/>
+        <rdfs:subPropertyOf rdf:resource="&OntologiaGenurilorMuzicale;continent"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#tipFestival -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;tipFestival">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;Festival"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#tipMelodie -->
+
+    <owl:DatatypeProperty rdf:about="&OntologiaGenurilorMuzicale;tipMelodie">
+        <rdfs:domain rdf:resource="&OntologiaGenurilorMuzicale;GenMuzical"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Aranjament -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;Aranjament">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;GenMuzical"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;GrupMuzical"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;ManifestareMuzicala"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;ObiectMuzical"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;OrigineGeografica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#ArtistMuzical -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;ArtistMuzical">
+        <rdfs:subClassOf rdf:resource="&OntologiaGenurilorMuzicale;GrupMuzical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#ArtistMuzicalSolo -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;ArtistMuzicalSolo">
+        <rdfs:subClassOf rdf:resource="&OntologiaGenurilorMuzicale;ArtistMuzical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#DataDeLansare -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;DataDeLansare">
+        <rdfs:subClassOf rdf:resource="&OntologiaGenurilorMuzicale;ManifestareMuzicala"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;Inregistrare"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;Piesa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Festival -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;Festival">
+        <rdfs:subClassOf rdf:resource="&OntologiaGenurilorMuzicale;GenMuzical"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;Subgen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#GenMuzical -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;GenMuzical">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;GrupMuzical"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;ManifestareMuzicala"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;ObiectMuzical"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;OrigineGeografica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#GrupMuzical -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;GrupMuzical">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;ManifestareMuzicala"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;ObiectMuzical"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;OrigineGeografica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Inregistrare -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;Inregistrare">
+        <rdfs:subClassOf rdf:resource="&OntologiaGenurilorMuzicale;ManifestareMuzicala"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;Piesa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Instrument -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;Instrument">
+        <rdfs:subClassOf rdf:resource="&OntologiaGenurilorMuzicale;Aranjament"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;Orchestra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#LansareEveniment -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;LansareEveniment">
+        <rdfs:subClassOf rdf:resource="&OntologiaGenurilorMuzicale;Festival"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#ManifestareMuzicala -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;ManifestareMuzicala">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;ObiectMuzical"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;OrigineGeografica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Microgen -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;Microgen">
+        <rdfs:subClassOf rdf:resource="&OntologiaGenurilorMuzicale;Subgen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#ObiectMuzical -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;ObiectMuzical">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&OntologiaGenurilorMuzicale;OrigineGeografica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Orchestra -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;Orchestra">
+        <rdfs:subClassOf rdf:resource="&OntologiaGenurilorMuzicale;Aranjament"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#OrigineGeografica -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;OrigineGeografica">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Persoana -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;Persoana">
+        <rdfs:subClassOf rdf:resource="&OntologiaGenurilorMuzicale;ArtistMuzicalSolo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Piesa -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;Piesa">
+        <rdfs:subClassOf rdf:resource="&OntologiaGenurilorMuzicale;ManifestareMuzicala"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Stream -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;Stream">
+        <rdfs:subClassOf rdf:resource="&OntologiaGenurilorMuzicale;Piesa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Subgen -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;Subgen">
+        <rdfs:subClassOf rdf:resource="&OntologiaGenurilorMuzicale;GenMuzical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#TrupaMuzicala -->
+
+    <owl:Class rdf:about="&OntologiaGenurilorMuzicale;TrupaMuzicala">
+        <rdfs:subClassOf rdf:resource="&OntologiaGenurilorMuzicale;GrupMuzical"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#1951 -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;1951">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;LansareEveniment"/>
+        <esteAnLansarePentru rdf:resource="&OntologiaGenurilorMuzicale;FestivalulDeLaSanremo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#1995 -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;1995"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Album -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;Album">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;ObiectMuzical"/>
+        <esteProvenitDin rdf:resource="&OntologiaGenurilorMuzicale;Argentina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#AmericaDeSud -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;AmericaDeSud">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;OrigineGeografica"/>
+        <esteOrigineaLui rdf:resource="&OntologiaGenurilorMuzicale;JulioIglesias"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#AndreRieu -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;AndreRieu">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;Persoana"/>
+        <esteAcompaniatDe rdf:resource="&OntologiaGenurilorMuzicale;Orchestra1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Argentina -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;Argentina">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;OrigineGeografica"/>
+        <esteTaraDin rdf:resource="&OntologiaGenurilorMuzicale;AmericaDeSud"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Bachata -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;Bachata">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;Microgen"/>
+        <esteGenMuzicalDin rdf:resource="&OntologiaGenurilorMuzicale;Latino"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#BailaMorena -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;BailaMorena">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;Piesa"/>
+        <esteInterpretataDe rdf:resource="&OntologiaGenurilorMuzicale;JulioIglesias"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Chacarera -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;Chacarera">
+        <rdfs:comment rdf:datatype="&xsd;string">Chacarera este un dans și muzică care își are originea în Santiago del Estero , Argentina . Este un gen de muzică populară care, pentru mulți argentinieni, servește ca o contrapartidă rurală pentru imaginea cosmopolită a Tango-ului. O formă de dans interpretată de muzicieni contemporani ca soliști sau în ansambluri mici de voce, chitară, vioară și tobe bombo, Chacarera este adesea legitimată de „originea” sa din îndepărtata provincie Santiago del Estero. Este, de asemenea, produsul unei construcții romantice a identității naționale proiectată de instituțiile culturale urbane și diseminată prin mass-media.</rdfs:comment>
+        <areOrigineaIn rdf:resource="&OntologiaGenurilorMuzicale;Argentina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Corzile -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;Corzile">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;Aranjament"/>
+        <suntPrincipalulElementLa rdf:resource="&OntologiaGenurilorMuzicale;Vioara"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#FestivalulDeLaSanremo -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;FestivalulDeLaSanremo">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;Festival"/>
+        <esteProvenitDin rdf:resource="&OntologiaGenurilorMuzicale;Italia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#GenteDeZona -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;GenteDeZona">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;TrupaMuzicala"/>
+        <esteProvenitaDin rdf:resource="&OntologiaGenurilorMuzicale;AmericaDeSud"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Internetul -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;Internetul">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;Stream"/>
+        <promoveazaUn rdf:resource="&OntologiaGenurilorMuzicale;Album"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Italia -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;Italia">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;OrigineGeografica"/>
+        <esteGazda rdf:resource="&OntologiaGenurilorMuzicale;FestivalulDeLaSanremo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#JulioIglesias -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;JulioIglesias">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;ArtistMuzicalSolo"/>
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;Persoana"/>
+        <aCompusBailaMorenaIn rdf:resource="&OntologiaGenurilorMuzicale;1995"/>
+        <areStudiiSuperioareIn rdf:resource="&OntologiaGenurilorMuzicale;Italia"/>
+        <esteSolist rdf:resource="&OntologiaGenurilorMuzicale;Latino"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Latino -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;Latino">
+        <esteGenMuzicalDin rdf:resource="&OntologiaGenurilorMuzicale;AmericaDeSud"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#LatinoSpaniol -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;LatinoSpaniol">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;Subgen"/>
+        <esteDerivatDin rdf:resource="&OntologiaGenurilorMuzicale;Latino"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#NicheRecords -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;NicheRecords">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;Inregistrare"/>
+        <estePromovatorulLui rdf:resource="&OntologiaGenurilorMuzicale;JulioIglesias"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Orchestra1 -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;Orchestra1">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;Orchestra"/>
+        <aInregistratUn rdf:resource="&OntologiaGenurilorMuzicale;Vinil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Rafaga -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;Rafaga">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;GrupMuzical"/>
+        <esteFormatIn rdf:resource="&OntologiaGenurilorMuzicale;1995"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#RickyMartin -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;RickyMartin">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;ArtistMuzical"/>
+        <esteOriginarDin rdf:resource="&OntologiaGenurilorMuzicale;AmericaDeSud"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Vinil -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;Vinil">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;ObiectMuzical"/>
+        <esteAlbum rdf:resource="&OntologiaGenurilorMuzicale;LatinoSpaniol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marcu/ontologies/2022/4/OntologiaGenurilorMuzicale#Vioara -->
+
+    <owl:NamedIndividual rdf:about="&OntologiaGenurilorMuzicale;Vioara">
+        <rdf:type rdf:resource="&OntologiaGenurilorMuzicale;Instrument"/>
+        <esteInstrumentInventatIn rdf:resource="&OntologiaGenurilorMuzicale;Italia"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
